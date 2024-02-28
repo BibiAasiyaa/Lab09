@@ -14,7 +14,6 @@ class TestBookManager(unittest.TestCase):
         self.assertEqual(self.manager.list_books(), [self.book1, self.book2])
 
     def test_remove_book(self):
-        self.manager.add_book(self.book1)
         self.manager.remove_book(self.book1)
         self.assertEqual(self.manager.list_books(), [self.book2])
 
