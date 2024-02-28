@@ -18,7 +18,7 @@ class BookManager:
 
     def add_book(self, book):
         if book not in self.books:
-          self.books.append(book)
+            self.books.append(book)
 
     def remove_book(self, isbn):
         self.books = [book for book in self.books if books.isbn != isbn]
