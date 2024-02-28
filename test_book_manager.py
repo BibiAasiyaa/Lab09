@@ -4,8 +4,8 @@ from book_manager import Book, BookManager
 class TestBookManager(unittest.TestCase):
     def setUp(self):
         self.manager = BookManager()
-        self.book1 = Book("1234567890", "Book 1", "Author 1")
-        self.book2 = Book("0987654321", "Book 2", "Author 2")
+        self.book1 = Book(1234567890, "Book 1", "Author 1")
+        self.book2 = Book(0987654321, "Book 2", "Author 2")
         self.manager.add_book(self.book1)
         self.manager.add_book(self.book2)
 
